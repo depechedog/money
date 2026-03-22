@@ -1383,7 +1383,7 @@ async function renderHistory() {
     const catPills = cats.map(([c,v])=>'<span style="font-size:.72rem;padding:.15rem .6rem;border-radius:10px;background:var(--surface3);color:var(--muted);">'+catByName(c).emoji+' '+c+' '+toDisplay(v)+'</span>').join('');
     return '<div class="card" style="margin-bottom:1rem;">'
       +'<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem;">'
-      '<div><div style="font-family:Syne,sans-serif;font-size:1.1rem;font-weight:700;">'+monthNames[s.month-1]+' '+s.year+'</div>'
+      +'<div><div style="font-family:Syne,sans-serif;font-size:1.1rem;font-weight:700;">'+monthNames[s.month-1]+' '+s.year+'</div>'
       +'<div style="font-size:.75rem;color:var(--muted);">Guardado el '+new Date(s.created_at).toLocaleDateString('es-VE',{day:'numeric',month:'short',year:'numeric'})+'</div></div>'
       +'<button onclick="deleteSnapshot('+s.id+')" style="background:none;border:none;color:var(--muted2);cursor:pointer;font-size:.75rem;text-decoration:underline;">Eliminar</button>'
       +'</div>'
